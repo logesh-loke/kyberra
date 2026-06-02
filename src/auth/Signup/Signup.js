@@ -182,8 +182,8 @@ const handleResendOtp = () => {
 
   return (
   
-  <div className="min-h-screen bg-[#F6F0FF]   flex items-center justify-center lg:px-6 overflow-hidden">
-  <div  className="w-full max-w-5xl lg:h-[570px] sm:h-[640px]  bg-white overflow-hidden rounded-2xl shadow-2xl lg:grid lg:grid-cols-2" >
+  <div className="min-h-screen bg-[#F6F0FF] flex items-center justify-center lg:px-6 overflow-hidden">
+  <div  className="w-full max-w-5xl lg:h-[570px] sm:h-[640px] bg-white overflow-hidden rounded-2xl shadow-2xl lg:grid lg:grid-cols-2" >
 
     {/* LEFT CARD */}
     <div
@@ -203,6 +203,23 @@ const handleResendOtp = () => {
         className=" lg:w-28"
         />
         </div>
+      {/* <div className="flex flex-col justify-center h-full absolute left-4 ">
+<h1 className="font-bold text-xl lg:text-3xl balance leading-tight mb-6 ">
+  Communicate confidently with a platform designed to protect sensitive information and business-critical conversations.
+</h1>
+
+<div className="mt-4">
+  <p className="font-semibold text-lg mb-3">Features</p>
+  <ul className="space-y-2 text-sm lg:text-base">
+    <li>✓ Military-Grade Encryption</li>
+    <li>✓ Secure Document Exchange</li>
+    <li>✓ Advanced Access Control</li>
+    <li>✓ Activity Monitoring & Audit Logs</li>
+    <li>✓ 99.99% Service Availability</li>
+    <li className="mt-2">Trusted by organizations worldwide.</li>
+  </ul>
+</div>
+</div> */}
       {/* content */}
       {/* <div className="text-white max-w-md">
         <h1 className="text-5xl font-bold leading-tight">
@@ -215,7 +232,6 @@ const handleResendOtp = () => {
       </div> */}
     </div>
 
-
     <div
       // style={{
       //   backgroundImage: `url(${background})`,
@@ -227,7 +243,7 @@ const handleResendOtp = () => {
     >
         
           {/* tab & mobile logo */}
-          <div className="block lg:hidden flex justify-center absolute top-8 sm:top-9 md:top-11 items-center mb-6">
+          <div className="block lg:hidden flex justify-center absolute top-5  items-center mb-6">
             <img src={logo} alt="logo-image" className="w-28" />
           </div>
 

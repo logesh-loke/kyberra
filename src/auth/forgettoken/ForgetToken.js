@@ -166,7 +166,7 @@ const ForgetToken = () => {
       className="min-h-[570px] flex items-center justify-center p-4 relative rounded-2xl bg-[#ffff]"
     >
           {/* tab & mobile logo */}
-          <div className="block lg:hidden flex justify-center absolute top-8 sm:top-9 md:top-11 items-center mb-6">
+          <div className="block lg:hidden flex justify-center absolute top-5 items-center mb-6">
             <img src={logo} alt="logo-image" className="w-28" />
           </div>
 

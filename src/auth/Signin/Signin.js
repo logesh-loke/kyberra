@@ -185,6 +185,13 @@ const Signin = () => {
         className=" lg:w-28"
         />
         </div>
+
+          <div className="max-w-sm ">
+    <h1 className="text-4xl font-bold leading-tight absolute left-4 bottom-3">
+      Communicate confidently with a platform designed to protect sensitive information and business-critical conversations.
+    </h1>
+    
+    </div>
       {/* content */}
       {/* <div className="text-white max-w-md">
         <h1 className="text-5xl font-bold leading-tight">
@@ -208,7 +215,7 @@ const Signin = () => {
     >
     
           {/* tab & mobile logo */}
-          <div className="block lg:hidden flex justify-center absolute top-8 sm:top-9 md:top-11 items-center mb-6">
+          <div className="block lg:hidden flex justify-center absolute top-5 items-center mb-6">
             <img src={logo} alt="logo-image" className="w-28" />
           </div>
 
