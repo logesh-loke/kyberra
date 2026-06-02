@@ -86,7 +86,7 @@ const OtpVerification = () => {
 
     return (
        <div
-        className="min-h-screen  bg-[#F6F0FF] flex items-center justify-center lg:px-6 overflow-hidden">
+        className="min-h-screen  bg-[#F6F0FF] flex items-center justify-center px-1 lg:px-6 md:px-4 overflow-hidden">
   <div  className="w-full max-w-5xl h-[570px]  bg-white overflow-hidden rounded-2xl shadow-2xl lg:grid lg:grid-cols-2" >
 
     {/* LEFT CARD */}
@@ -129,7 +129,7 @@ const OtpVerification = () => {
       className="min-h-[570px] flex items-center otp-verification-container justify-center p-4 relative rounded-2xl bg-[#ffff]"
     >
           {/* tab & mobile logo */}
-          <div className="block lg:hidden flex justify-center absolute top-5 items-center mb-6">
+          <div className="block lg:hidden flex justify-center absolute top-3 items-center mb-6">
             <img src={logo} alt="logo-image" className="w-28" />
           </div>
         

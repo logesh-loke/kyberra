@@ -19,7 +19,6 @@ import SubscriptionExpired from "./components/popups/SubscriptionExpired";
 import ScrollToTop from "./utils/ScrollToTop";
 // import SnackBar from "./components/snackbar/SnackBar";
 
-
 function App() {
   const location = useLocation();
   const { isOpen } = useClickContext();

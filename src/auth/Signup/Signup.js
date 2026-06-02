@@ -182,8 +182,8 @@ const handleResendOtp = () => {
 
   return (
   
-  <div className="min-h-screen bg-[#F6F0FF] flex items-center justify-center lg:px-6 overflow-hidden">
-  <div  className="w-full max-w-5xl lg:h-[570px] sm:h-[640px] bg-white overflow-hidden rounded-2xl shadow-2xl lg:grid lg:grid-cols-2" >
+  <div className="min-h-screen bg-[#F6F0FF] flex px-1 md:px-4 items-center justify-center lg:px-6 overflow-hidden">
+  <div  className="w-full max-w-5xl lg:h-[570px]  bg-white overflow-hidden rounded-2xl shadow-2xl lg:grid lg:grid-cols-2" >
 
     {/* LEFT CARD */}
     <div
@@ -243,7 +243,7 @@ const handleResendOtp = () => {
     >
         
           {/* tab & mobile logo */}
-          <div className="block lg:hidden flex justify-center absolute top-5  items-center mb-6">
+          <div className="block lg:hidden flex justify-center absolute top-5 md:top-1 items-center mb-6">
             <img src={logo} alt="logo-image" className="w-28" />
           </div>
 

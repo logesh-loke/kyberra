@@ -201,7 +201,7 @@ const PassConfirmPass = () => {
   }, [emailerror]);
 
   return (
-    <div className="min-h-screen bg-[#F6F0FF] flex items-center justify-center lg:px-6 overflow-hidden">
+    <div className="min-h-screen bg-[#F6F0FF] flex items-center justify-center px-1 lg:px-6 md:px-4 overflow-hidden">
   <div div className="w-full max-w-5xl h-[570px] bg-white overflow-hidden rounded-2xl shadow-2xl lg:grid lg:grid-cols-2" >
 
     {/* LEFT CARD */}
