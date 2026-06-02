@@ -183,7 +183,7 @@ const handleResendOtp = () => {
   return (
   
   <div className="min-h-screen bg-[#F6F0FF]   flex items-center justify-center lg:px-6 overflow-hidden">
-  <div  className="w-full max-w-6xl h-[570px] bg-white overflow-hidden rounded-2xl shadow-2xl lg:grid lg:grid-cols-2" >
+  <div  className="w-full max-w-5xl lg:h-[570px] sm:h-[640px]  bg-white overflow-hidden rounded-2xl shadow-2xl lg:grid lg:grid-cols-2" >
 
     {/* LEFT CARD */}
     <div
@@ -215,10 +215,6 @@ const handleResendOtp = () => {
       </div> */}
     </div>
 
-          {/* tab & mobile logo */}
-            <div className="block lg:hidden m-1 lg:m-4">
-            <img src={logo} alt="logo-image" className="w-12 " />
-            </div>
 
     <div
       // style={{
@@ -227,14 +223,18 @@ const handleResendOtp = () => {
       //   backgroundPosition: "center",
       //   backgroundRepeat: "no-repeat",
       // }}
-      className="min-h-[500px] flex items-center justify-center p-4 relative rounded-2xl bg-[#ffff]"
+      className="min-h-[570px] flex items-center justify-center p-4 relative rounded-2xl bg-[#ffff]"
     >
         
+          {/* tab & mobile logo */}
+          <div className="block lg:hidden flex justify-center absolute top-8 sm:top-9 md:top-11 items-center mb-6">
+            <img src={logo} alt="logo-image" className="w-28" />
+          </div>
 
       <div className="relative w-full  flex justify-center">
         
 
-        <div className="relative bg-white p-8 ">
+        <div className="relative bg-white p-4 sm:p-8 w-full max-w-md">
 
        
           {/* Header */}
@@ -248,7 +248,7 @@ const handleResendOtp = () => {
           </div>
 
           {/* Form */}
-          <div className="space-y-4">
+          <div className="lg:space-y-4 sm:space-y-2 ">
             {/* First + Last Name */}
             <div className="flex gap-3">
               <div className="flex-1">
