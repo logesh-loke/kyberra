@@ -1,0 +1,64 @@
+/* Premium Loader - #6C72F3 Theme */
+
+.loader {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  background: linear-gradient(
+    135deg,
+    rgba(108, 114, 243, 0.12),
+    rgba(108, 114, 243, 0.04)
+  );
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: progress;
+}
+
+/* Bar Base Setup */
+.jimu-primary-loading,
+.jimu-primary-loading:before,
+.jimu-primary-loading:after {
+  width: 14px;
+  height: 36px;
+  border-radius: 8px;
+  background: linear-gradient(180deg, #6C72F3, #4B50E6);
+  animation: premium-loading 0.9s infinite ease-in-out;
+  /* box-shadow: 0 6px 18px rgba(108, 114, 243, 0.4); */
+  position: absolute;
+}
+
+/* Left bar */
+.jimu-primary-loading:before {
+  content: "";
+  left: -22px;
+  animation-delay: 0s;
+}
+
+/* Right bar */
+.jimu-primary-loading:after {
+  content: "";
+  left: 22px;
+  animation-delay: 0.4s;
+}
+
+/* Center bar */
+.jimu-primary-loading {
+  animation-delay: 0.2s;
+}
+
+/* Premium Animation */
+@keyframes premium-loading {
+  0%,
+  80%,
+  100% {
+    transform: scaleY(0.7);
+    opacity: 0.6;
+  }
+  40% {
+    transform: scaleY(1.2);
+    opacity: 1;
+    /* box-shadow: 0 12px 30px rgba(108, 114, 243, 0.7); */
+  }
+}

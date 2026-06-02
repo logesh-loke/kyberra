@@ -1,0 +1,17 @@
+.editor p {
+  margin: 0 0 10px;
+  font-size: 14px;
+  line-height: 1.6;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+}
+
+.editor br {
+  line-height: 1.6;
+}
+
+.editor a {
+  color: #1a73e8;        /* Gmail blue */
+  text-decoration: underline;
+  cursor: pointer;
+}

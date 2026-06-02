@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'styles/style.css';
+
+
+.Toastify__toast {
+  min-width: 280px !important;
+  max-width: min(500px, 90vw) !important;
+  width: auto !important;
+  font-size: 15px !important;
+}
+
+.Toastify__toast-body {
+  font-size: 15px !important;
+  white-space: normal !important;
+  word-wrap: break-word !important;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+
+
+/* Remove outline on focus */
+
+.recharts-wrapper,
+.recharts-wrapper * {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+svg:focus {
+  outline: none !important;
+}

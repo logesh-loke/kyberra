@@ -1,0 +1,14 @@
+.prose a {
+  color: #1a73e8;              
+  text-decoration: underline;
+  word-break: break-word;
+}
+
+.prose p {
+  margin: 0 0 12px;
+  line-height: 1.6;
+}
+
+.prose br {
+  line-height: 1.6;
+}
