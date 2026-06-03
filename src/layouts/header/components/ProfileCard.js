@@ -104,8 +104,8 @@ const ProfileCard = ({ onClose }) => {
               `flex items-center gap-2 w-full px-2 py-2 rounded-md transition-all
                ${
                  isActive
-                   ? "bg-indigo-50 text-indigo-600 font-semibold"
-                   : "hover:bg-gray-100 text-gray-700"
+                   ? "bg-[#dcc4ff] text-[#8A3FFA] font-semibold"
+                   : "hover:bg-[#F3EBFF] text-gray-700"
                }`
             }
           >
@@ -125,8 +125,8 @@ const ProfileCard = ({ onClose }) => {
                   `flex items-center gap-2 w-full px-2 py-2 rounded-md transition-all
                ${
                  isActive
-                   ? "bg-indigo-50 text-indigo-600 font-semibold"
-                   : "hover:bg-gray-100 text-gray-700"
+                   ? "bg-[#dcc4ff] text-[#8A3FFA] font-semibold"
+                   : "hover:bg-[#F3EBFF] text-gray-700"
                }`
                 }
               >
@@ -144,8 +144,8 @@ const ProfileCard = ({ onClose }) => {
                   `flex items-center gap-2 w-full px-2 py-2 rounded-md transition-all
                ${
                  isActive
-                   ? "bg-indigo-50 text-indigo-600 font-semibold"
-                   : "hover:bg-gray-100 text-gray-700"
+                   ? "bg-[#dcc4ff] text-[#8A3FFA] font-semibold"
+                   : "hover:bg-[#F3EBFF] text-gray-700"
                }`
                 }
               >
@@ -162,8 +162,8 @@ const ProfileCard = ({ onClose }) => {
                   `flex items-center gap-2 w-full px-2 py-2 rounded-md transition-all
                ${
                  isActive
-                   ? "bg-indigo-50 text-indigo-600 font-semibold"
-                   : "hover:bg-gray-100 text-gray-700"
+                   ? "bg-[#dcc4ff] text-[#8A3FFA] font-semibold"
+                   : "hover:bg-[#F3EBFF] text-gray-700"
                }`
                 }
               >
@@ -183,8 +183,8 @@ const ProfileCard = ({ onClose }) => {
               `flex items-center gap-2 w-full px-2 py-2 rounded-md transition-all
                ${
                  isActive
-                   ? "bg-indigo-50 text-indigo-600 font-semibold"
-                   : "hover:bg-gray-100 text-gray-700"
+                   ? "bg-[#dcc4ff] text-[#8A3FFA] font-semibold"
+                   : "hover:bg-[#F3EBFF] text-gray-700"
                }`
             }
           >
@@ -202,8 +202,8 @@ const ProfileCard = ({ onClose }) => {
               `flex items-center gap-2 w-full px-2 py-2 rounded-md transition-all
                ${
                  isActive
-                   ? "bg-indigo-50 text-indigo-600 font-semibold"
-                   : "hover:bg-gray-100 text-gray-700"
+                   ? "bg-[#dcc4ff] text-[#8A3FFA] font-semibold"
+                   : "hover:bg-[#F3EBFF] text-gray-700"
                }`
             }
           >

@@ -8,8 +8,8 @@ const NotFound = () => {
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
         <div class="w-full flex-col justify-start items-center lg:gap-16 gap-10 inline-flex pt-12  pb-12">
-          <div class="border border-indigo-300 h-[550px] rounded-lg w-full">
-            <div class="p-8 flex justify-between items-center border-b border-indigo-100">
+          <div class="border border-purple-300 h-[550px] rounded-lg w-full">
+            <div class="p-8 flex justify-between items-center border-b border-purple-100">
               <div class="block">
                 <svg
                   width="204"
@@ -131,7 +131,7 @@ const NotFound = () => {
               </svg>
               <div class="block text-center mt-5">
                 <h5 class="md:text-xl text-lg leading-8 text-gray-900 font-medium mb-1.5">
-                  <span class="text-indigo-600 font-semibold ">Oops!</span> It
+                  <span class="text-purple-600 font-semibold ">Oops!</span> It
                   seems like you've taken a wrong turn
                 </h5>
                 <p class="text-sm text-gray-500">
@@ -140,7 +140,7 @@ const NotFound = () => {
               </div>
                <button 
                 onClick={() => navigate(-1)}
-                class="mt-6 px-6 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors"
+                class="mt-6 px-6 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors"
               >
                 Go Back
               </button>

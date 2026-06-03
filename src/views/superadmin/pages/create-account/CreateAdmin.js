@@ -317,10 +317,10 @@ export default function CreateAdmin() {
       isEmailError
         ? "border-red-500 focus:ring-2 focus:ring-red-500/20 focus:border-red-500"
         : isEmailSuccess
-        ? "border-green-500 focus:ring-2 focus:ring-green-500/20 focus:border-green-500"
-        : "border-slate-300 focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500"
+        ? "border-green-500 focus:ring-2 focus:ring-green-500/20 focus:border-[#9653fb]"
+        : "border-slate-300 focus:ring-2 focus:ring-[#dcc6fe] focus:border-[#9653fb]"
     }
-    hover:border-slate-400 transition
+    hover:[#e1cdfe] transition
   `;
 
   const adminEmailErrorText =
@@ -337,7 +337,7 @@ export default function CreateAdmin() {
           <div className="flex items-center h-12 gap-3">
             <button
               onClick={() => navigate(-1)}
-              className="inline-flex items-center gap-2 text-sm font-medium px-4 py-2 rounded-lg text-slate-600 hover:text-slate-800 hover:bg-slate-100 transition"
+              className="inline-flex items-center gap-2 text-sm font-medium px-4 py-2 rounded-lg text-slate-600 hover:text-slate-800 hover:bg-[#F6F0FF] transition"
             >
               <svg
                 className="w-4 h-4"
@@ -354,7 +354,7 @@ export default function CreateAdmin() {
               </svg>
             </button>
 
-            <div className="w-px h-6 bg-slate-300"></div>
+            <div className="w-px h-6 bg-[#F6F0FF]"></div>
 
             <p className="text-sm text-slate-500">
               Create admin account for encrypted mail control panel
@@ -379,7 +379,7 @@ export default function CreateAdmin() {
                   value={admin.adminFname}
                   onChange={handleChange}
                   placeholder="Admin first name"
-                  className="w-full border border-slate-300 rounded-lg px-4 py-3 text-sm bg-white outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 hover:border-slate-400 transition"
+                  className="w-full border border-slate-300 rounded-lg px-4 py-3 text-sm bg-white outline-none focus:ring-2 focus:ring-[ring-[#dcc6fe]] focus:border-[#9653fb] hover:border[#e1cdfe] transition"
                 />
                 {showErrors && errors.adminFname && (
                   <p className="text-red-500 text-xs mt-1">
@@ -398,7 +398,7 @@ export default function CreateAdmin() {
                   value={admin.adminLname}
                   onChange={handleChange}
                   placeholder="Admin last name"
-                  className="w-full border border-slate-300 rounded-lg px-4 py-3 text-sm bg-white outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 hover:border-slate-400 transition"
+                  className="w-full border border-slate-300 rounded-lg px-4 py-3 text-sm bg-white outline-none focus:ring-2 focus:ring-[#dcc6fe] focus:border-[#9653fb] hover:border-[#e1cdfe] transition"
                 />
                 {showErrors && errors.adminLname && (
                   <p className="text-red-500 text-xs mt-1">
@@ -449,7 +449,7 @@ export default function CreateAdmin() {
                     value={admin.password}
                     onChange={handleChange}
                     placeholder="Enter password"
-                    className="w-full border border-slate-300 rounded-lg px-4 py-3 pr-12 text-sm bg-white outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 hover:border-slate-400 transition"
+                    className="w-full border border-slate-300 rounded-lg px-4 py-3 pr-12 text-sm bg-white outline-none focus:ring-2 focus:ring-[#dcc6fe] focus:border-[#9653fb] hover:[#e1cdfe] transition"
                   />
                   <button
                     type="button"
@@ -478,7 +478,7 @@ export default function CreateAdmin() {
                     value={admin.cpassword}
                     onChange={handleChange}
                     placeholder="Re-enter password"
-                    className="w-full border border-slate-300 rounded-lg px-4 py-3 pr-12 text-sm bg-white outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 hover:border-slate-400 transition"
+                    className="w-full border border-slate-300 rounded-lg px-4 py-3 pr-12 text-sm bg-white outline-none focus:ring-2 focus:ring-[#dcc6fe] focus:border-[#9653fb] hover:[#e1cdfe] transition"
                   />
                   <button
                     type="button"
@@ -509,7 +509,7 @@ export default function CreateAdmin() {
 
             <button
               type="submit"
-              className="px-8 py-3 rounded-lg bg-[#6C72F3] text-white hover:bg-[#656cf3] shadow-sm hover:shadow-md transition"
+              className="px-8 py-3 rounded-lg bg-[#8A3FFA] text-white hover:bg-[#7f2dfa] shadow-sm hover:shadow-md transition"
             >
               Create Admin
             </button>

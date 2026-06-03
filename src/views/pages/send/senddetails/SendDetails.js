@@ -239,14 +239,14 @@ const getFileBadge = (mimeType) => {
 };
 
   return (
-    <div className="h-[calc(100vh-65px)] bg-gray-50">
+    <div className="h-[calc(100vh-65px)] bg-[#FCFAFF]">
       {/* Top action toolbar */}
       <div className="bg-white border-b">
         <div className="flex items-center justify-between px-2 py-2">
           <div className="flex items-center gap-2">
             <button
               onClick={() => navigate(-1)}
-              className="p-2 rounded-full hover:bg-gray-100 transition"
+              className="p-2 rounded-full hover:bg-[#F3EBFF] transition"
               aria-label="Back to inbox"
             >
               <FiChevronLeft className="text-lg" />
@@ -254,20 +254,20 @@ const getFileBadge = (mimeType) => {
 
             <div className="hidden sm:flex items-center gap-1">
               <button
-                className="p-2 rounded hover:bg-gray-100 transition"
+                className="p-2 rounded hover:bg-[#F3EBFF] transition"
                 title="Archive"
                 onClick={() => handleAction("archived")}
               >
                 <FiArchive />
               </button>
               <button
-                className="p-2 rounded hover:bg-gray-100 transition"
+                className="p-2 rounded hover:bg-[#F3EBFF] transition"
                 title="Report spam"
               >
                 <FiAlertCircle />
               </button>
               <button
-                className="p-2 rounded hover:bg-gray-100 transition"
+                className="p-2 rounded hover:bg-[#F3EBFF] transition"
                 title="Delete"
                 onClick={() => handleAction("deleted")}
               >
@@ -277,7 +277,7 @@ const getFileBadge = (mimeType) => {
               <div className="h-6 w-px bg-gray-200 mx-1" />
 
               <button
-                className="p-2 rounded hover:bg-gray-100 transition"
+                className="p-2 rounded hover:bg-[#F3EBFF] transition"
                 title="More"
               >
                 <FiMoreVertical />
@@ -287,7 +287,7 @@ const getFileBadge = (mimeType) => {
 
           <div className="flex items-center gap-2">
             <button
-              className="p-2 rounded hover:bg-gray-100 transition"
+              className="p-2 rounded hover:bg-[#F3EBFF] transition"
               title="More"
             >
               <FiMoreVertical />
@@ -314,7 +314,7 @@ const getFileBadge = (mimeType) => {
 
               <div className="mt-3 flex items-center gap-3">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-[#676ce7] text-white flex items-center justify-center font-semibold">
+                  <div className="w-10 h-10 rounded-full bg-[#260C41] text-white flex items-center justify-center font-semibold">
                     {initials}
                   </div>
 
@@ -448,7 +448,7 @@ const getFileBadge = (mimeType) => {
 
       <button
         onClick={downloadAllFiles}
-        className="flex items-center gap-1 text-sm text-blue-600 hover:underline"
+        className="flex items-center gap-1 text-sm text-[#8A3FFA] hover:underline"
       >
         <HiOutlineDownload className="w-4 h-4" />
         Download all
@@ -467,7 +467,7 @@ const getFileBadge = (mimeType) => {
             className="w-[180px] border rounded-md bg-white hover:shadow-sm transition"
           >
             {/* Preview */}
-            <div className="h-24 bg-gray-100 relative flex items-center justify-center overflow-hidden">
+            <div className="h-24 bg-[#F3EBFF] relative flex items-center justify-center overflow-hidden">
               {isImage ? (
                 <img
                   src={file.url}
@@ -506,7 +506,7 @@ const getFileBadge = (mimeType) => {
 
                 <button
                   onClick={() => downloadFile(file)}
-                  className="text-blue-600 hover:underline"
+                  className="text-[#8A3FFA] hover:underline"
                 >
                   <HiOutlineDownload className="w-4 h-4" />
                 </button>

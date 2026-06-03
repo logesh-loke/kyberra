@@ -265,7 +265,7 @@ return (
       {/* Profile Section */}
       <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-8 mb-6">
         <div className="flex items-start gap-6">
-          <div className="w-24 h-24 rounded-full bg-[#E3E5FF] text-[#676CE7] flex items-center justify-center text-3xl font-bold">
+          <div className="w-24 h-24 rounded-full bg-[#F6F0FF] text-[#260C41] flex items-center justify-center text-3xl font-bold">
             {(firstName[0] || "").toUpperCase()}
             {(lastName[0] || "").toUpperCase()}
           </div>
@@ -279,7 +279,7 @@ return (
               <span>{email}</span>
             </div>
 
-            <div className="inline-flex items-center gap-1.5 mt-3 px-3 py-1 bg-[#E3E5FF] text-[#676CE7] rounded-full text-sm font-medium">
+            <div className="inline-flex items-center gap-1.5 mt-3 px-3 py-1 bg-[#A14FFC26] text-[#AF7BFD] rounded-full text-sm font-medium">
               <Shield className="w-4 h-4" />
               {role}
             </div>
@@ -292,8 +292,8 @@ return (
         {/* Title + Edit/Save/Cancel */}
         <div className="flex items-center justify-between gap-3 mb-6">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-lg bg-[#E3E5FF] flex items-center justify-center">
-              <User className="w-5 h-5 text-[#676CE7]" />
+            <div className="w-10 h-10 rounded-lg bg-[#A14FFC26] flex items-center justify-center">
+              <User className="w-5 h-5 text-[#AF7BFD]" />
             </div>
             <h3 className="text-xl font-bold text-slate-900">
               Account Details
@@ -314,7 +314,7 @@ return (
                   type="button"
                   onClick={handleSave}
                   disabled={isUpdating}
-                  className={`${isUpdating ? "cursor-not-allowed opacity-50" : ""} px-4 py-1.5 rounded-full bg-[#676CE7] text-white text-xs md:text-sm font-medium hover:bg-[#575ddc]"`}
+                  className={`${isUpdating ? "cursor-not-allowed opacity-50" : ""} px-4 py-1.5 rounded-full bg-[#8A3FFA] text-white text-xs md:text-sm font-medium hover:bg-[#771ff9]"`}
                 >
                     {isUpdating ? <SmallSpinner/> : "Save Changes"}
                   
@@ -343,7 +343,7 @@ return (
                 type="text"
                 value={form.first_name}
                 onChange={handleChange("first_name")}
-                className="w-full border border-slate-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                className="w-full border border-slate-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-purple-500/70"
               />
             ) : (
               <p className="text-sm text-slate-900">{firstName}</p>
@@ -360,7 +360,7 @@ return (
                 type="text"
                 value={form.last_name}
                 onChange={handleChange("last_name")}
-                className="w-full border border-slate-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                className="w-full border border-slate-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-purple-500/70"
               />
             ) : (
               <p className="text-sm text-slate-900">{lastName}</p>
@@ -387,7 +387,7 @@ return (
                   type="text"
                   value={form.phone_number}
                   onChange={handleChange("phone_number")}
-                  className="flex-1 border border-slate-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                  className="flex-1 border border-slate-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-purple-500/70"
                   placeholder="9894006582"
                 />
               </div>
@@ -460,7 +460,7 @@ return (
     const value = e.target.value.replace(/\D/g, "");
     setOtp(value);
   }}
-  className="mt-5 w-full border border-slate-300 rounded-lg px-4 py-2.5 text-center text-lg tracking-widest focus:outline-none focus:ring-2 focus:ring-indigo-500"
+  className="mt-5 w-full border border-slate-300 rounded-lg px-4 py-2.5 text-center text-lg tracking-widest focus:outline-none focus:ring-2 focus:ring-purple-500/70"
 />
 
 
@@ -480,7 +480,7 @@ return (
         <button
         type="button"
           onClick={handleVerifyOtp}
-          className="px-5 py-2 rounded-full bg-[#676CE7] text-white text-sm font-medium hover:bg-[#575ddc]"
+          className="px-5 py-2 rounded-full bg-[#8A3FFA] text-white text-sm font-medium hover:bg-[#771ff9]"
         >
           {otpVerifyLoading ? <SmallSpinner /> : "Verify OTP"}
         </button>
@@ -508,7 +508,7 @@ return (
         type="email"
         value={newGmail}
         onChange={(e) => setNewGmail(e.target.value)}
-        className="mt-5 w-full border border-slate-300 rounded-lg px-4 py-2.5 text-center text-lg tracking-widest focus:outline-none focus:ring-2 focus:ring-indigo-500"
+        className="mt-5 w-full border border-slate-300 rounded-lg px-4 py-2.5 text-center text-lg tracking-widest focus:outline-none focus:ring-2 focus:ring-purple-500/70"
       />
 
       {/* Actions */}

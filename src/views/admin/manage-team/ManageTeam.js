@@ -156,7 +156,7 @@ setIsDeleteModalOpen(true);
                 onClick={() => navigate(-1)}
                 type="button"
                 className="inline-flex items-center gap-2 text-sm font-medium px-4 py-2 rounded-lg
-                text-slate-600 hover:text-slate-800 hover:bg-slate-100 transition"
+                text-slate-600 hover:text-slate-800 hover:bg-[#FCFAFF] transition"
               >
                 <FiArrowLeft className="w-4 h-4" />
               </button>
@@ -171,7 +171,7 @@ setIsDeleteModalOpen(true);
             {/* Right: search + add + pagination */}
             <div className="flex items-center gap-3">
               {/* Search */}
-              <div className="flex items-center gap-2 rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-sm">
+              <div className="flex items-center gap-2 rounded-full border border-slate-200 bg-[#FCFAFF] px-3 py-1.5 text-sm">
                 <FiSearch className="text-slate-400" />
                 <input
                   value={search}
@@ -184,7 +184,7 @@ setIsDeleteModalOpen(true);
               {/* Add Employee */}
               <button
                 type="button"
-                className="hidden sm:inline-flex items-center gap-2 rounded-full border border-slate-200 px-3 py-1.5 text-xs font-medium text-slate-700 hover:bg-slate-100 transition"
+                className="hidden sm:inline-flex items-center gap-2 rounded-full border border-slate-200 px-3 py-1.5 text-xs font-medium text-slate-700 hover:bg-[#FCFAFF] transition"
                  onClick={() => navigate("/create-account/add-employee-details")} // wire when route ready
               >
                 + Add Employee
@@ -203,7 +203,7 @@ setIsDeleteModalOpen(true);
                 </p>
                 <div className="flex items-center gap-1">
                   <button
-                    className={`rounded-lg p-1.5 text-slate-500 hover:bg-slate-100 hover:text-slate-700 transition ${
+                    className={`rounded-lg p-1.5 text-slate-500 hover:bg-[#F6F0FF] hover:text-slate-700 transition ${
                       page === 1 ? "cursor-not-allowed opacity-40" : ""
                     }`}
                     onClick={() => setPage((prev) => Math.max(1, prev - 1))}
@@ -214,7 +214,7 @@ setIsDeleteModalOpen(true);
                   </button>
 
                   <button
-                    className={`rounded-lg p-1.5 text-slate-500 hover:bg-slate-100 hover:text-slate-700 transition ${
+                    className={`rounded-lg p-1.5 text-slate-500 hover:bg-[#F6F0FF] hover:text-slate-700 transition ${
                       filteredEmployees.length === 0
                         ? "cursor-not-allowed opacity-40"
                         : ""
@@ -263,12 +263,12 @@ setIsDeleteModalOpen(true);
                   return (
                     <tr
                       key={emp.id}
-                      className="hover:bg-slate-50/70 transition"
+                      className="hover:bg-[#f0e6fe] transition"
                     >
                       {/* Employee */}
                       <td className="px-4 py-3">
                         <div className="flex items-center gap-3">
-                          <div className="flex h-9 w-9 items-center justify-center rounded-full bg-[#E0E7FF] text-[#676CE7] text-xs font-semibold ">
+                          <div className="flex h-9 w-9 items-center justify-center rounded-full bg-[#F6F0FF] text-[#260C41] text-xs font-semibold ">
                             {initials}
                           </div>
                           <div>
@@ -396,7 +396,7 @@ setIsDeleteModalOpen(true);
 
         {/* Buttons */}
         <div className="flex justify-end gap-2 pt-2">
-          <button onClick={() => setIsDeleteModalOpen(false)} className="px-3.5 py-1.5 text-sm rounded-lg border border-gray-200 text-gray-700 hover:bg-gray-50 transition">
+          <button onClick={() => setIsDeleteModalOpen(false)} className="px-3.5 py-1.5 text-sm rounded-lg border border-gray-200 text-gray-700 hover:bg-[#FCFAFF] transition">
            No, Cancel
           </button>
 

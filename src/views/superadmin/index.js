@@ -198,7 +198,7 @@ const SuperAdminDashboard = () => {
               </div>
               <Link
                 to={card.link}
-                className="inline-flex gap-1 items-center rounded-full border border-indigo-100 bg-indigo-50 px-2 text-[10px] sm:text-[11px] font-medium text-indigo-600"
+                className="inline-flex gap-1 items-center rounded-full border border-[#A14FFC85] bg-[#A14FFC26] px-2 text-[10px] sm:text-[11px] font-medium text-[#AF7BFD]"
               >
                 {card.trend} view
               </Link>
@@ -372,7 +372,7 @@ const SuperAdminDashboard = () => {
                       </p>
                     </td>
                     <td className="px-2 sm:px-3 py-2 align-top">
-                      <span className="inline-flex items-center rounded-full border border-indigo-100 bg-indigo-50 px-2 py-0.5 text-[10px] sm:text-[11px] font-medium text-indigo-600">
+                      <span className="inline-flex items-center rounded-full border border-[#A14FFC85] bg-[#A14FFC26] px-2 py-0.5 text-[10px] sm:text-[11px] font-medium text-[#AF7BFD]">
                         {user.phone_number}
                       </span>
                     </td>

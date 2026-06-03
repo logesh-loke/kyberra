@@ -126,7 +126,7 @@ const MemberShipPlanHistory = () => {
 
                       {/* Plan */}
                       <td className="px-4 py-3 align-middle">
-                        <span className="inline-flex items-center rounded-full bg-indigo-50 px-2.5 py-0.5 text-[11px] font-semibold text-indigo-700">
+                        <span className="inline-flex items-center rounded-full bg-purple-100 px-2.5 py-0.5 text-[11px] font-semibold text-purple-500">
                           {getPlanLabel(plan.plan_name)}
                         </span>
                       </td>

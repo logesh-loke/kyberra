@@ -318,7 +318,7 @@ const getFileBadge = (mimeType) => {
 
               <div className="mt-3 flex items-center gap-3">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-[#676ce7] text-white flex items-center justify-center font-semibold">
+                  <div className="w-10 h-10 rounded-full bg-[#260C41] text-white flex items-center justify-center font-semibold">
                     {initials}
                   </div>
 

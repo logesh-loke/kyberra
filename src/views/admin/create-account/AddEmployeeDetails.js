@@ -159,7 +159,7 @@ const AddEmployeeDetails = () => {
               onClick={() => navigate(-1)}
               type="button"
               className="inline-flex items-center gap-2 text-sm font-medium px-2 py-2 rounded-lg
-                text-slate-600 hover:text-slate-800 hover:bg-slate-100 transition"
+                text-slate-600 hover:text-slate-800 hover:bg-[#F8FAFC] transition"
             >
               <FiArrowLeft className="w-4 h-4" />
             </button>
@@ -196,7 +196,7 @@ const AddEmployeeDetails = () => {
                     value={formData.firstName}
                     onChange={handleChange}
                     placeholder="Enter first name"
-                    className="w-full rounded-lg border border-gray-300 bg-white pl-10 pr-4 py-2.5 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors text-sm"
+                    className="w-full rounded-lg border border-gray-300 bg-white pl-10 pr-4 py-2.5 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500/70 focus:border-purple-500/70 transition-colors text-sm"
                   />
                 </div>
                 {errors.firstName && (
@@ -218,7 +218,7 @@ const AddEmployeeDetails = () => {
                     value={formData.lastName}
                     onChange={handleChange}
                     placeholder="Enter last name"
-                    className="w-full rounded-lg border border-gray-300 bg-white pl-10 pr-4 py-2.5 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors text-sm"
+                    className="w-full rounded-lg border border-gray-300 bg-white pl-10 pr-4 py-2.5 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500/70 focus:border-purple-500/70 transition-colors text-sm"
                   />
                 </div>
                 {errors.lastName && (
@@ -259,7 +259,7 @@ const AddEmployeeDetails = () => {
                   value={formData.gmail}
                   onChange={handleChange}
                   placeholder="employee@gmail.com"
-                  className="w-full rounded-lg border bg-white pl-10 pr-4 py-2.5 text-sm transition-colors border-gray-300 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                  className="w-full rounded-lg border bg-white pl-10 pr-4 py-2.5 text-sm transition-colors border-gray-300 text-gray-900 focus:outline-none focus:ring-2 focus:ring-purple-500/70 focus:border-purple-500/70"
  
                 />
               </div>
@@ -299,7 +299,7 @@ const AddEmployeeDetails = () => {
                   name="countryCode"
                   value={formData.countryCode}
                   onChange={handleChange}
-                  className="rounded-l-lg border border-r-0 border-gray-300 bg-gray-50 px-3 py-2.5 text-xs md:text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                  className="rounded-l-lg border border-r-0 border-gray-300 bg-gray-50 px-3 py-2.5 text-xs md:text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-purple-500/70 focus:border-purple-500/70"
                 >
                   <option value="+91">🇮🇳 +91</option>
                   <option value="+1">🇺🇸 +1</option>
@@ -316,7 +316,7 @@ const AddEmployeeDetails = () => {
                     value={formData.phone}
                     onChange={handleChange}
                     placeholder="Enter phone number"
-                    className="w-full rounded-r-lg border border-l-0 border-gray-300 bg-white pl-9 pr-4 py-2.5 text-sm text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                    className="w-full rounded-r-lg border border-l-0 border-gray-300 bg-white pl-9 pr-4 py-2.5 text-sm text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500/70 focus:border-purple-500/70 transition-colors"
                   />
                 </div>
               </div>
@@ -338,7 +338,7 @@ const AddEmployeeDetails = () => {
 
               <button
                 onClick={handleSubmit}
-                className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#6C72F3] px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-1 transition-colors"
+                className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#8A3FFA] px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#771ff9] focus:outline-none focus:ring-2 focus:ring-purple-500/70 focus:ring-offset-1 transition-colors"
               >
                 <span>Create Employee Account</span>
                 <FaArrowRightLong size={16} />

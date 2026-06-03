@@ -148,7 +148,7 @@ function EmailInput({
                      hover:bg-indigo-50 transition-colors duration-150"
                 >
                   {/* Avatar */}
-                  <div className="flex items-center justify-center w-8 h-8 rounded-full bg-indigo-100 text-indigo-700 font-semibold text-sm">
+                  <div className="flex items-center justify-center w-8 h-8 rounded-full bg-[#F3EBFF] text-indigo-700 font-semibold text-sm">
                     {firstLetter}
                   </div>
 
@@ -572,7 +572,7 @@ const clearComposeCache = () => {
         >
           <span className="text-sm font-medium">New Message</span>
           <IoMdClose
-            className="text-red-500 hover:bg-gray-100 rounded p-1 cursor-pointer"
+            className="text-red-500 hover:bg-[#c49dff] rounded p-1 cursor-pointer"
             size={20}
             onClick={(e) => {
               e.stopPropagation();
@@ -589,7 +589,7 @@ const clearComposeCache = () => {
           }`}
         >
           {/* HEADER */}
-          <div className="flex items-center justify-between px-3 py-2 bg-gray-100 border-b">
+          <div className="flex items-center justify-between px-3 py-2 bg-[#F3EBFF] border-b">
             <span className="text-sm font-medium text-gray-800">
               New Message
             </span>
@@ -627,13 +627,13 @@ const clearComposeCache = () => {
                   value={toList}
                   suggestionList={suggestionList}
                   onChange={setToList}
-                  placeholder="recipient@crypsyn.com"
+                  placeholder="recipient@kyberra.com"
                 />
               </div>
 
               {!showCC && (
                 <button
-                  className="text-xs text-indigo-600 hover:underline"
+                  className="text-xs text-[#8A3FFA] hover:underline"
                   onClick={() => setShowCC(true)}
                 >
                   Cc
@@ -641,7 +641,7 @@ const clearComposeCache = () => {
               )}
               {!showBCC && (
                 <button
-                  className="ml-1 text-xs text-indigo-600 hover:underline"
+                  className="ml-1 text-xs text-[#8A3FFA] hover:underline"
                   onClick={() => setShowBCC(true)}
                 >
                   Bcc
@@ -657,7 +657,7 @@ const clearComposeCache = () => {
                     value={ccList}
                     suggestionList={suggestionList}
                     onChange={setCcList}
-                    placeholder="cc@crypsyn.com"
+                    placeholder="cc@kyberra.com"
                   />
                 </div>
               </div>
@@ -671,7 +671,7 @@ const clearComposeCache = () => {
                     value={bccList}
                     suggestionList={suggestionList}
                     onChange={setBccList}
-                    placeholder="bcc@crypsyn.com"
+                    placeholder="bcc@kyberra.com"
                   />
                 </div>
               </div>
@@ -764,7 +764,7 @@ const clearComposeCache = () => {
                   disabled={
                     isSending || toList.length === 0 || messageHtml.length === 0
                   }
-                  className={`${isSending || toList.length === 0 || messageHtml.length === 0 ? "cursor-not-allowed opacity-50" : ""} bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-l-full text-sm font-medium`}
+                  className={`${isSending || toList.length === 0 || messageHtml.length === 0 ? "cursor-not-allowed opacity-50" : ""} bg-[#8A3FFA] hover:bg-[#7f2dfa] text-white px-5 py-2 rounded-l-full text-sm font-medium`}
                   onClick={handleSend}
                 >
                   {" "}
@@ -777,7 +777,7 @@ const clearComposeCache = () => {
                   disabled={
                     isSending || toList.length === 0 || messageHtml.length === 0
                   }
-                  className={`${isSending || toList.length === 0 || messageHtml.length === 0 ? "cursor-not-allowed opacity-50" : ""} bg-blue-600 hover:bg-blue-700 text-white px-3 rounded-r-full border-l border-blue-500`}
+                  className={`${isSending || toList.length === 0 || messageHtml.length === 0 ? "cursor-not-allowed opacity-50" : ""} bg-[#8A3FFA] hover:bg-[#7f2dfa] text-white px-3 rounded-r-full border-l border-[#F6F0FF]`}
                 >
                   <FiChevronDown />
                 </button>
@@ -862,7 +862,7 @@ const clearComposeCache = () => {
                       <button
                         disabled={!customDate}
                         onClick={() => schedule(customDate, "custom")}
-                        className="w-full bg-blue-600 text-white rounded py-1 text-sm disabled:opacity-50"
+                        className="w-full bg-[#8A3FFA] text-white rounded py-1 text-sm disabled:opacity-50"
                       >
                         Schedule
                       </button>

@@ -143,7 +143,7 @@ const PendingVerificationTab = ({ search }) => {
                       {/* User */}
                       <td className="px-4 py-3">
                         <div className="flex items-center gap-3">
-                          <div className="flex h-9 w-9 items-center justify-center rounded-full  bg-[#E0E7FF] text-[#676CE7] text-xs font-semibold">
+                          <div className="flex h-9 w-9 items-center justify-center rounded-full  bg-[#F6F0FF] text-[#260C41] text-xs font-semibold">
                             {initials}
                           </div>
                           <div>

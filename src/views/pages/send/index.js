@@ -339,7 +339,7 @@ const uiDelete = (emailId, receiverId) => {
           <label className="inline-flex items-center gap-2 cursor-pointer select-none">
             <input
               type="checkbox"
-              className="w-[13px] h-[13px] accent-blue-600 cursor-pointer"
+              className="w-[13px] h-[13px] accent-[#8A3FFA] cursor-pointer"
               onChange={selectAll}
               checked={allSelected}
             />
@@ -347,27 +347,27 @@ const uiDelete = (emailId, receiverId) => {
 
           <button
             onClick={handleRefresh}
-            className="p-2 rounded-full hover:bg-gray-100 transition"
+            className="p-2 rounded-full hover:bg-[#F3EBFF] transition"
           >
             <FiRefreshCw />
           </button>
           <button
             onClick={handledeleteall}
             disabled={selectedIds?.length === 0}
-            className={`p-2 rounded-full hover:bg-gray-100 transition ${
+            className={`p-2 rounded-full hover:bg-[#F3EBFF] transition ${
               selectedIds?.length === 0 ? "cursor-not-allowed opacity-50" : ""
             }`}
           >
             <FiTrash2 />
           </button>
 
-          <button className="p-2 rounded-full hover:bg-gray-100 transition">
+          <button className="p-2 rounded-full hover:bg-[#F3EBFF] transition">
             <FiMoreVertical />
           </button>
         </div>
 
         <div className="flex items-center gap-2">
-          <div className="hidden md:flex items-center bg-gray-50 border rounded-full px-3 py-1 gap-2">
+          <div className="hidden md:flex items-center bg-[#F3EBFF] border rounded-full px-3 py-1 gap-2">
             <FiSearch />
             <input
               value={search}
@@ -380,7 +380,7 @@ const uiDelete = (emailId, receiverId) => {
           <div className="flex items-center gap-1">
             {/* Left (Decrement) */}
             <button
-              className={`p-2 rounded hover:bg-gray-100 transition ${
+              className={`p-2 rounded hover:bg-[#F3EBFF] transition ${
                 page === 1 ? "cursor-not-allowed opacity-50" : ""
               }`}
               onClick={() => setPage((prev) => Math.max(1, prev - 1))}
@@ -391,7 +391,7 @@ const uiDelete = (emailId, receiverId) => {
 
             {/* Right (Increment) */}
             <button
-              className={`p-2 rounded hover:bg-gray-100 transition ${
+              className={`p-2 rounded hover:bg-[#F3EBFF] transition ${
                 mails?.length < 50 ? "cursor-not-allowed opacity-50" : ""
               }`}
               onClick={() => setPage((prev) => prev + 1)}
@@ -428,7 +428,7 @@ const uiDelete = (emailId, receiverId) => {
               return (
                 <li
                   key={mailId}
-                  className="group grid grid-cols-[20px_20px_200px_1fr_auto] items-center gap-4 px-4 py-2 hover:bg-gray-50 transition cursor-pointer" // 👈 added `group`
+                  className="group grid grid-cols-[20px_20px_200px_1fr_auto] items-center gap-4 px-4 py-2 hover:bg-[#F3EBFF] transition cursor-pointer" // 👈 added `group`
                   onClick={() => handleMailClick(mailId, senderid)}
                 >
                   {/* Checkbox */}
@@ -437,7 +437,7 @@ const uiDelete = (emailId, receiverId) => {
                       checked={isSelected}
                       onChange={() => toggleSelect(mailId)}
                       type="checkbox"
-                      className="w-[13px] h-[13px] accent-blue-600 cursor-pointer"
+                      className="w-[13px] h-[13px] accent-[#8A3FFA] cursor-pointer"
                     />
                   </div>
 
@@ -492,7 +492,7 @@ const uiDelete = (emailId, receiverId) => {
                     >
                       {/* Delete */}
                       <button
-                        className="p-1 rounded-full hover:bg-gray-200"
+                        className="p-1 rounded-full hover:bg-[#cfafff]"
                         title="Delete"
                         onClick={() =>
                           uiDelete(mailId, senderid)
@@ -503,7 +503,7 @@ const uiDelete = (emailId, receiverId) => {
 
                       {/* Archive */}
                       <button
-                        className="p-1 rounded-full hover:bg-gray-200"
+                        className="p-1 rounded-full hover:bg-[#cfafff]"
                         title="Archive"
                         onClick={() =>
                           uiArchive(mailId, senderid)

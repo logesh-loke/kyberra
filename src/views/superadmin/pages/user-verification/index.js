@@ -32,12 +32,12 @@ const UserVerification = () => {
               </p>
             </div>
 
-            <div className="mt-2 flex items-center gap-2 rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-sm w-fit">
+            <div className="mt-2 flex items-center gap-2 rounded-full border border-slate-200 bg-[#F6F0FF] px-3 py-1.5 text-sm w-fit">
   <input
     value={search}
     onChange={(e) => setSearch(e.target.value)}
     placeholder="Search by name, email, or company"
-    className="w-64 bg-transparent text-xs text-slate-700 outline-none placeholder:text-slate-400"
+  className="w-64 bg-transparent text-xs text-slate-700  outline-none placeholder:text-slate-400"
   />
 </div>
 
@@ -60,7 +60,7 @@ const UserVerification = () => {
             >
               Pending Verification
               {activeTab === "pending" && (
-                <span className="absolute left-0 right-0 -bottom-px h-0.5 rounded-full bg-[#6C72F3]" />
+                <span className="absolute left-0 right-0 -bottom-px h-0.5 rounded-full bg-[#8A3FFA]" />
               )}
             </button>
 

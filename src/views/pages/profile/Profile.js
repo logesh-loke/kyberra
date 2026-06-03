@@ -147,8 +147,8 @@ const Profile = () => {
             <div
               className={`flex items-center gap-3 ${showPasskeyForm && "mb-4"}`}
             >
-              <div className="w-10 h-10 rounded-lg bg-[#E3E5FF] flex items-center justify-center">
-                <Key className="w-5 h-5 text-[#676CE7]" />
+              <div className="w-10 h-10 rounded-lg bg-[#F5F3FF] flex items-center justify-center">
+                <Key className="w-5 h-5 text-[#A855F7]" />
               </div>
               <div>
                 <h3 className="text-xl font-bold text-slate-900">Passkey</h3>
@@ -161,7 +161,7 @@ const Profile = () => {
             {!showPasskeyForm && (
               <button
                 onClick={() => setShowPasskeyForm(true)}
-                className="px-5 py-2 bg-[#676CE7] hover:bg-[#575CDA] text-white rounded-xl transition-all"
+                className="px-5 py-2 bg-[#A855F7] hover:bg-[#9631f5] text-white rounded-xl transition-all"
               >
                 Set Passkey
               </button>
@@ -181,8 +181,8 @@ const Profile = () => {
                   onChange={(e) =>
                     setPasskeyData({ ...passkeyData, token: e.target.value })
                   }
-                  className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl 
-                            focus:outline-none focus:ring-2 focus:ring-[#676CE7]"
+                  className="w-full px-4 py-3 bg-[#FCFAFF] border border-[#8A3FFA] rounded-xl 
+                            focus:outline-none focus:ring-2 focus:ring-[#c59ffd]"
                 />
               </div>
               {tokenError && <p className="text-xs text-red-500">{tokenError}</p>}
@@ -203,7 +203,7 @@ const Profile = () => {
                       })
                     }
                     className="w-full px-4 py-3 pr-10 bg-slate-50 border border-slate-200 rounded-xl 
-                              focus:outline-none focus:ring-2 focus:ring-[#676CE7]"
+                              focus:outline-none focus:ring-2 focus:ring-[#A855F7]"
                   />
                   <button
                     type="button"
@@ -238,7 +238,7 @@ const Profile = () => {
                       })
                     }
                     className="w-full px-4 py-3 pr-10 bg-slate-50 border border-slate-200 rounded-xl 
-                              focus:outline-none focus:ring-2 focus:ring-[#676CE7]"
+                              focus:outline-none focus:ring-2 focus:ring-[#A855F7]"
                   />
                   <button
                     type="button"
@@ -269,7 +269,7 @@ const Profile = () => {
                   !passkeyData.confirmPasskey
                 }
                 onClick={handleSubmitPasskey}
-                className={`w-full py-3 bg-[#676CE7] hover:bg-[#575CDA] text-white font-medium rounded-xl transition-all ${
+                className={`w-full py-3 bg-[#A855F7] hover:bg-[#9631f5] text-white font-medium rounded-xl transition-all ${
                   passkeyLoading ||
                   !passkeyData.newPasskey ||
                   !passkeyData.confirmPasskey

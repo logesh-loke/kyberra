@@ -207,7 +207,7 @@ const AddEmployeeCredential = () => {
               onClick={() => navigate(-1)}
               type="button"
               className="inline-flex items-center gap-2 text-sm font-medium px-2 py-2 rounded-lg
-                text-slate-600 hover:text-slate-800 hover:bg-slate-100 transition"
+                text-slate-600 hover:text-slate-800 hover:bg-[#F6F0FF] transition"
             >
               <FiArrowLeft className="w-4 h-4" />
             </button>
@@ -250,7 +250,7 @@ const AddEmployeeCredential = () => {
                         ? "border-green-500 focus:border-green-500 focus:ring-2 focus:ring-green-200"
                         : emailerrorstate === "exists"
                         ? "border-red-500 focus:border-red-500 focus:ring-2 focus:ring-red-200"
-                        : "border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200"
+                        : "border-gray-300 focus:border-purple-500 focus:ring-2 focus:ring-purple-200"
                     }`}
                 />
                 <span className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 text-xs md:text-sm pointer-events-none">
@@ -280,7 +280,7 @@ const AddEmployeeCredential = () => {
                   value={formData.password}
                   onChange={handleChange}
                   placeholder="Create a password"
-                  className={`w-full pl-11 pr-12 py-2.5 bg-gray-50 border rounded-lg text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-200 transition-all
+                  className={`w-full pl-11 pr-12 py-2.5 bg-gray-50 border focus:border-purple-500 rounded-lg text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-200 transition-all
                     ${
                       formData.password
                         ? passwordValid
@@ -319,7 +319,7 @@ const AddEmployeeCredential = () => {
                   value={formData.confirm}
                   onChange={handleChange}
                   placeholder="Re-enter password"
-                  className={`w-full pl-11 pr-12 py-2.5 bg-gray-50 border rounded-lg text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-200 transition-all
+                  className={`w-full pl-11 pr-12 py-2.5 bg-gray-50 border rounded-lg text-sm focus:border-purple-500 text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-200 transition-all
                     ${
                       formData.confirm
                         ? passwordsMatch
@@ -362,7 +362,7 @@ const AddEmployeeCredential = () => {
               <button
                 onClick={handleSubmit}
                 disabled={isLoading}
-                className={`inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-sm font-semibold text-white shadow-sm bg-[#6C72F3] hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-1 transition-colors ${
+                className={`inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-sm font-semibold text-white shadow-sm bg-[#8A3FFA] hover:bg-[#771ff9] focus:outline-none focus:ring-2 focus:ring-purple-500/80 focus:ring-offset-1 transition-colors ${
                   isLoading ? "cursor-not-allowed opacity-90" : ""
                 }`}
               >

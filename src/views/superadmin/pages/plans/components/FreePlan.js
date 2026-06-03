@@ -37,12 +37,12 @@ const FreePlan = ({ freePlan, onEdit }) => {
       </p>
 
       <ul className="mt-4 flex items-center flex-wrap gap-2 text-sm text-gray-600">
-        <li className="bg-[#EEF2FF] text-[#6C72F3] px-3 py-1 rounded-full">Basic encrypted email sending</li>
-        <li className="bg-[#EEF2FF] text-[#6C72F3] px-3 py-1 rounded-full">File upload limit: 3 MB</li>
-        <li className="bg-[#EEF2FF] text-[#6C72F3] px-3 py-1 rounded-full">Message size limit: 1,000 characters</li>
-        <li className="bg-[#EEF2FF] text-[#6C72F3] px-3 py-1 rounded-full">Customer support response within 72 hours</li>
-        <li className="bg-[#EEF2FF] text-[#6C72F3] px-3 py-1 rounded-full">View sent message history</li>
-        <li className="bg-[#EEF2FF] text-[#6C72F3] px-3 py-1 rounded-full">No custom branding</li>
+        <li className="bg-[#A14FFC26] text-[#AF7BFD] px-3 py-1 rounded-full">Basic encrypted email sending</li>
+        <li className="bg-[#A14FFC26] text-[#AF7BFD] px-3 py-1 rounded-full">File upload limit: 3 MB</li>
+        <li className="bg-[#A14FFC26] text-[#AF7BFD] px-3 py-1 rounded-full">Message size limit: 1,000 characters</li>
+        <li className="bg-[#A14FFC26] text-[#AF7BFD] px-3 py-1 rounded-full">Customer support response within 72 hours</li>
+        <li className="bg-[#A14FFC26] text-[#AF7BFD] px-3 py-1 rounded-full">View sent message history</li>
+        <li className="bg-[#A14FFC26] text-[#AF7BFD] px-3 py-1 rounded-full">No custom branding</li>
       </ul>
 
       {/* <div className="mt-6 flex items-center justify-between">

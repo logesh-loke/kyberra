@@ -210,14 +210,14 @@ const UserManagement = () => {
   return (
     <div className=" bg-gradient-to-br from-slate-50 to-blue-50/30 ">
       {/* Header */}
-      <div className="bg-white border-b border-slate-200">
+      <div className="bg-white border-b border-[#F6F0FF]">
         <div className="px-4">
           <div className="flex items-center justify-between h-12 ">
             <div className="flex items-center gap-3">
               <button
                 onClick={() => navigate(-1)}
                 type="button"
-                className="inline-flex items-center gap-2 text-sm font-medium px-4 py-2 rounded-lg text-slate-600 hover:text-slate-800 hover:bg-slate-100 transition"
+                className="inline-flex items-center gap-2 text-sm font-medium px-4 py-2 rounded-lg text-slate-600 hover:text-slate-800 hover:bg-[#F6F0FF] transition"
               >
                 <FiArrowLeft className="w-4 h-4" />
               </button>
@@ -232,7 +232,7 @@ const UserManagement = () => {
             </div>
 
             <div className="flex items-center gap-2">
-              <div className="flex flex-1 items-center gap-2 rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-sm">
+              <div className="flex flex-1 items-center gap-2 rounded-full border border-[#F6F0FF] bg-[#F6F0FF] px-3 py-1.5 text-sm">
                 <FiSearch className="text-slate-400" />
                 <input
                   value={search}
@@ -254,7 +254,7 @@ const UserManagement = () => {
                 </p>
                 <div className="flex items-center gap-1">
                   <button
-                    className={`rounded-lg p-1.5 text-slate-500 hover:bg-slate-100 hover:text-slate-700 transition ${
+                    className={`rounded-lg p-1.5 text-slate-500 hover:bg-[#F6F0FF] hover:text-slate-700 transition ${
                       page === 1 ? "cursor-not-allowed opacity-40" : ""
                     }`}
                     onClick={() => setPage((prev) => Math.max(1, prev - 1))}
@@ -265,7 +265,7 @@ const UserManagement = () => {
                   </button>
 
                   <button
-                    className="rounded-lg p-1.5 text-slate-500 hover:bg-slate-100 hover:text-slate-700 transition"
+                    className="rounded-lg p-1.5 text-slate-500 hover:bg-[#F6F0FF] hover:text-slate-700 transition"
                     onClick={() => setPage((prev) => prev + 1)}
                     type="button"
                     disabled={isLoading || users?.length === 0}
@@ -282,7 +282,7 @@ const UserManagement = () => {
       <div>
         {/* Main card */}
 
-        <div className="overflow-hidden   border border-slate-200 bg-white shadow-sm">
+        <div className="overflow-hidden   border border-[#F6F0FF] bg-white shadow-sm">
           {/* Content */}
           <div className="overflow-x-auto">
             {isLoading ? (
@@ -309,7 +309,7 @@ const UserManagement = () => {
                       <th className="px-4 py-3">Created</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y  divide-slate-100 text-xs">
+                  <tbody className="divide-y  divide-[#F6F0FF] text-xs">
                     {filteredUsers.map((user) => {
                       const fullName = formatName(
                         user.first_name,
@@ -327,7 +327,7 @@ const UserManagement = () => {
                           {/* User */}
                           <td className="px-4 py-3">
                             <div className="flex items-center gap-3">
-                              <div className="flex h-9 w-9 items-center justify-center rounded-full bg-indigo-100 text-xs font-semibold text-indigo-700">
+                              <div className="flex h-9 w-9 items-center justify-center rounded-full bg-[#F6F0FF] text-xs font-semibold text-[#260C41]">
                                 {initials}
                               </div>
                               <div>
@@ -347,12 +347,12 @@ const UserManagement = () => {
                               className={`inline-flex items-center rounded-full px-3 pt-1 pb-1 text-[11px] whitespace-nowrap
     ${
       user.role === "admin"
-        ? "bg-indigo-50 text-indigo-600"
+        ? "bg-indigo-50 text-purple-600"
         : user.role === "employee"
-          ? "bg-blue-50 text-blue-600"
+          ? "bg-blue-50 text-purple-600"
           : user.role === "user"
             ? "bg-emerald-50 text-emerald-600"
-            : "bg-slate-100 text-slate-500"
+            : "bg-[#F6F0FF] text-slate-500"
     }
 
     `}
@@ -432,7 +432,7 @@ const UserManagement = () => {
                                   user.role === "user" &&
                                     handleoffline({ user_id: user.id });
                                 }}
-                                className="inline-flex whitespace-nowrap items-center justify-center rounded-full border border-slate-300 bg-slate-100 px-3 py-1 text-[11px] font-medium text-slate-500 cursor-pointer hover:bg-slate-200 hover:text-slate-600 active:scale-[0.97] transition duration-150"
+                                className="inline-flex whitespace-nowrap items-center justify-center rounded-full border border-slate-300 bg-[#F6F0FF] px-3 py-1 text-[11px] font-medium text-slate-500 cursor-pointer hover:bg-[#F6F0FF] hover:text-slate-600 active:scale-[0.97] transition duration-150"
                               >
                                 Go Offline
                               </button>
@@ -448,7 +448,7 @@ const UserManagement = () => {
                                   user.role === "user" &&
                                     handleonline({ user_id: user.id });
                                 }}
-                                className=" inline-flex whitespace-nowrap items-center justify-center rounded-full border border-slate-300 bg-slate-100 px-3 py-1 text-[11px] font-medium text-slate-500 cursor-pointer hover:bg-slate-200 hover:text-slate-600 active:scale-[0.97] transition duration-150 "
+                                className=" inline-flex whitespace-nowrap items-center justify-center rounded-full border border-slate-300 bg-[#F6F0FF] px-3 py-1 text-[11px] font-medium text-slate-500 cursor-pointer hover:bg-[#F6F0FF] hover:text-slate-600 active:scale-[0.97] transition duration-150 "
                               >
                                 Go Online
                               </button>

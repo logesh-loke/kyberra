@@ -64,12 +64,12 @@ const Settings = () => {
               onClick={() => navigate(-1)}
               type="button"
               className="inline-flex items-center gap-2 text-sm font-medium px-4 py-2 rounded-lg
-              text-slate-600 hover:text-slate-800 hover:bg-slate-100 transition"
+              text-slate-600 hover:text-slate-800 hover:bg-[#F6F0FF] transition"
             >
               <FiArrowLeft className="w-4 h-4" />
             </button>
 
-            <div className="w-px h-6 bg-slate-300" />
+            <div className="w-px h-6 bg-[#F6F0FF]" />
 
             <div>
               <p className="text-sm font-semibold text-slate-800">Settings</p>
@@ -87,7 +87,7 @@ const Settings = () => {
           {/* Session Security */}
           <section className="bg-white border border-slate-200 rounded-lg p-4">
             <div className="flex items-center gap-2 mb-3">
-              <FiLock className="w-4 h-4 text-indigo-500" />
+              <FiLock className="w-4 h-4 text-[#8A3FFA]" />
               <h2 className="text-sm font-semibold text-slate-800">
                 Session Security
               </h2>
@@ -100,7 +100,7 @@ const Settings = () => {
                   type="checkbox"
                   checked={sessionTimeout}
                   disabled
-                  className="mt-[2px] w-[13px] h-[13px] accent-indigo-500 cursor-not-allowed opacity-70"
+                  className="mt-[2px] w-[13px] h-[13px] accent-[#8A3FFA] cursor-not-allowed opacity-70"
                 />
                 <div>
                   <span className="font-medium">Session timeout enabled</span>
@@ -120,12 +120,12 @@ const Settings = () => {
                 <select
                   value={timeoutDuration}
                   onChange={(e) => setTimeoutDuration(e.target.value)}
-                  className="w-full max-w-[220px] border border-slate-300 rounded-md px-2 py-1.5 text-[11px]
-                  focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-white"
+                  className="w-full max-w-[220px] border border-[#8A3FFA] rounded-md px-2 py-1.5 text-[11px] accent-[#8A3FFA]
+                  focus:outline-none focus:ring-2 focus:ring-[#aa73fb] bg-white"
                 >
-                  <option value="15min">15 minutes</option>
-                  <option value="30min">30 minutes</option>
-                  <option value="1h">1 hour</option>
+                  <option value="15min" className="bg-[#F6F0FF] hover:bg-[#F6F0FF]">15 minutes</option>
+                  <option value="30min" className="bg-[#F6F0FF] hover:bg-[#F6F0FF]">30 minutes</option>
+                  <option value="1h" className="bg-[#F6F0FF] hover:bg-[#F6F0FF]">1 hour</option>
                 </select>
 
                 <p className="text-[10px] text-slate-500">
@@ -138,7 +138,7 @@ const Settings = () => {
                 <button
                   type="submit"
                   className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-[11px] font-medium
-                  bg-indigo-600 text-white hover:bg-indigo-500"
+                  bg-[#AF7BFD] text-white hover:bg-[#9651fc]"
                 >
                   Save session settings
                 </button>

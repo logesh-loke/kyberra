@@ -86,7 +86,7 @@ const PasskeyModal = ({ open, onClose, onSubmit, passkeyError, isLoading }) => {
                 }
               }}
               placeholder="Enter your passkey"
-              className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-blue-500/60 focus:border-blue-500"
+              className="w-full border border-[#8A3FFA] rounded-lg px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-[#d0b1fd] focus:border-[#aa73fb]"
               required
             />
 
@@ -114,7 +114,7 @@ const PasskeyModal = ({ open, onClose, onSubmit, passkeyError, isLoading }) => {
             </button>
             <button
               type="submit"
-              className={`px-4 py-1.5 text-sm rounded-lg bg-blue-600 text-white font-medium hover:bg-blue-700 transition ${
+              className={`px-4 py-1.5 text-sm rounded-lg bg-[#AF7BFD] text-white font-medium hover:bg-[#9652fc] transition ${
                 isLoading ? "cursor-not-allowed opacity-50" : ""
               }`}
             >

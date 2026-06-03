@@ -435,7 +435,7 @@ export default function CreateCompany() {
             <button
               onClick={() => navigate(-1)}
               type="button"
-              className="inline-flex items-center gap-2 text-sm font-medium px-4 py-2 rounded-lg text-slate-600 hover:text-slate-800 hover:bg-slate-100 transition"
+              className="inline-flex items-center gap-2 text-sm font-medium px-4 py-2 rounded-lg text-slate-600 hover:text-slate-800 hover:bg-[#F6F0FF] transition"
             >
               <svg
                 className="w-4 h-4"
@@ -452,7 +452,7 @@ export default function CreateCompany() {
               </svg>
             </button>
 
-            <div className="w-px h-6 bg-slate-300"></div>
+            <div className="w-px h-6 bg-[#F6F0FF]"></div>
 
             <p className="text-sm text-slate-500">
               Set up company workspace for encrypted mail
@@ -461,7 +461,7 @@ export default function CreateCompany() {
           <button
             onClick={() => setPortalModal(true)}
             type="button"
-            className="inline-flex items-center gap-2 text-sm font-medium px-4 py-2 rounded-lg text-white bg-[#6C72F3] hover:bg-[#5A62E0] transition"
+            className="inline-flex items-center gap-2 text-sm font-medium px-4 py-2 rounded-lg text-white bg-[#8A3FFA] hover:bg-[#7c28f9] transition"
           >
             Create Portal
           </button>
@@ -485,7 +485,7 @@ export default function CreateCompany() {
                 value={company.companyName}
                 onChange={handleChange}
                 placeholder="Enter company name"
-                className=" w-full border border-slate-300 rounded-lg px-4 py-3 text-sm bg-white outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 hover:border-slate-400 transition "
+                className=" w-full border border-slate-300 rounded-lg px-4 py-3 text-sm bg-white outline-none focus:ring-2 focus:ring-[#dcc6fe] focus:#9653fb] hover:border-[#9653fb] transition "
               />
               {errors.companyName && (
                 <p className="text-red-500 text-xs mt-1">
@@ -504,7 +504,7 @@ export default function CreateCompany() {
                 value={company.buyerName}
                 onChange={handleChange}
                 placeholder="Primary contact name"
-                className=" w-full border border-slate-300 rounded-lg px-4 py-3 text-sm bg-white outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 hover:border-slate-400 transition "
+                className=" w-full border border-slate-300 rounded-lg px-4 py-3 text-sm bg-white outline-none focus:ring-2 focus:ring-[#dcc6fe] focus:#9653fb] hover:border-[#9653fb] transition "
               />
               {errors.buyerName && (
                 <p className="text-red-500 text-xs mt-1">{errors.buyerName}</p>
@@ -521,7 +521,7 @@ export default function CreateCompany() {
                                 name="countryCode"
                                 value={company.countryCode}
                                 onChange={handleChange}
-                                className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none appearance-none bg-white"
+                                className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#9653fb] focus:border-transparent outline-none appearance-none bg-white"
                               >
                                 {COUNTRY_CODES.map((code, index) => (
                                     <option key={index} value={code.code}>{code.code} {code.label}</option>
@@ -551,7 +551,7 @@ export default function CreateCompany() {
                 onChange={handleChange}
                 placeholder="9876543210"
                 maxLength={10}
-                className=" w-full border border-slate-300 rounded-lg px-4 py-3 text-sm bg-white outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 hover:border-slate-400 transition "
+                className=" w-full border border-slate-300 rounded-lg px-4 py-3 text-sm bg-white outline-none focus:ring-2 focus:ring-[#dcc6fe] focus:#9653fb] hover:border-[#9653fb] transition "
               />
               {errors.phoneNumber && (
                 <p className="text-red-500 text-xs mt-1">
@@ -576,7 +576,7 @@ export default function CreateCompany() {
                 onChange={handleChange}
                 readOnly={otpValidationResponse?.data?.message === "Success" || emailValidationResponse?.data?.message === "Success"}
                 placeholder="example@gmail.com"
-                className={`w-full ${otpValidationResponse?.data?.message === "Success" || emailValidationResponse?.data?.message === "Success" ? "bg-slate-100 cursor-not-allowed opacity-50" : ""} border border-slate-300 rounded-lg px-4 py-3 text-sm bg-white outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 hover:border-slate-400 transition`}
+                className={`w-full ${otpValidationResponse?.data?.message === "Success" || emailValidationResponse?.data?.message === "Success" ? "bg-slate-100 cursor-not-allowed opacity-50" : ""} border border-slate-300 rounded-lg px-4 py-3 text-sm bg-white outline-none focus:ring-2 focus:ring-[#dcc6fe] focus:#9653fb] hover:border-[#9653fb] transition`}
               />
               {errors.emailId && (
                 <p className="text-red-500 text-xs mt-1">{errors.emailId}</p>
@@ -595,7 +595,7 @@ export default function CreateCompany() {
                       value={digit}
                       onChange={(e) => handleOtpChange(e.target.value, index)}
                       onKeyDown={(e) => handleKeyDown(e, index)}
-                      className="w-8 h-8 text-center text-md  border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6C72F3]"
+                      className="w-8 h-8 text-center text-md  border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8A3FFA]"
                     />
                   ))}
                 </div>
@@ -604,7 +604,7 @@ export default function CreateCompany() {
                 type="button"
                   onClick={handleOtpSubmit}
                   disabled={isOtpValidationLoading}
-                  className={`px-6 py-1 bg-[#6C72F3] text-white rounded-lg hover:bg-[#6C72F3]/90 transition ${
+                  className={`px-6 py-1 bg-[#8A3FFA] text-white rounded-lg hover:bg-[#7c28f9] transition ${
                     isOtpValidationLoading ? "cursor-not-allowed opacity-50" : ""
                   }`}
                 >
@@ -621,7 +621,7 @@ export default function CreateCompany() {
                     isEmailValidationLoading || !company.emailId || otpValidationResponse?.data?.message === "Success"
                       ? "cursor-not-allowed opacity-50"
                       : ""
-                  } bg-[#6C72F3] px-4 py-1 text-white rounded-lg`}
+                  } bg-[#8A3FFA] px-4 py-1 text-white rounded-lg`}
                 >
                   {isEmailValidationLoading ? (
                     <div className="px-6">
@@ -647,7 +647,7 @@ export default function CreateCompany() {
                 value={company.companyDomain}
                 onChange={handleChange}
                 placeholder="crypsyn.com"
-                className=" w-full border border-slate-300 rounded-lg px-4 py-3 text-sm bg-white outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 hover:border-slate-400 transition "
+                className=" w-full border border-slate-300 rounded-lg px-4 py-3 text-sm bg-white outline-none focus:ring-2 focus:ring-[#9653fb]/20 focus:border-[#9653fb] hover:border-[#9653fb] transition "
               />
               {errors.companyDomain && (
                 <p className="text-red-500 text-xs mt-1">
@@ -666,7 +666,7 @@ export default function CreateCompany() {
                 value={selectedPlanId}
                 onChange={handlePlanChange}
                 disabled={isPlanLoading || isPlanError || !planOptions.length}
-                className=" w-full border border-slate-300 rounded-lg px-4 py-3 text-sm bg-white outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 hover:border-slate-400 transition "
+                className=" w-full border border-slate-300 rounded-lg px-4 py-3 text-sm bg-white outline-none focus:ring-2 focus:ring-[#dcc6fe] focus:border-[#9653fb] hover:border-[#9653fb] transition "
               >
                 <option value="">
                   {isPlanLoading
@@ -700,7 +700,7 @@ export default function CreateCompany() {
                 value={company.streetAddress}
                 onChange={handleChange}
                 placeholder="Street, building, landmark"
-                className=" w-full border border-slate-300 rounded-lg px-4 py-3 text-sm bg-white outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 hover:border-slate-400 transition "
+                className=" w-full border border-slate-300 rounded-lg px-4 py-3 text-sm bg-white outline-none focus:ring-2 focus:ring-[#dcc6fe] focus:border-[#9653fb] hover:border-[#9653fb] transition "
               />
               {errors.streetAddress && (
                 <p className="text-red-500 text-xs mt-1">
@@ -717,7 +717,7 @@ export default function CreateCompany() {
                 value={company.area}
                 onChange={handleChange}
                 placeholder="Locality / area"
-                className=" w-full border border-slate-300 rounded-lg px-4 py-3 text-sm bg-white outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 hover:border-slate-400 transition "
+                className=" w-full border border-slate-300 rounded-lg px-4 py-3 text-sm bg-white outline-none focus:ring-2 focus:ring-[#dcc6fe] focus:border-[#9653fb] hover:border-[#9653fb] transition "
               />
               {errors.area && (
                 <p className="text-red-500 text-xs mt-1">{errors.area}</p>
@@ -732,7 +732,7 @@ export default function CreateCompany() {
                 value={company.city}
                 onChange={handleChange}
                 placeholder="City"
-                className=" w-full border border-slate-300 rounded-lg px-4 py-3 text-sm bg-white outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 hover:border-slate-400 transition "
+                className=" w-full border border-slate-300 rounded-lg px-4 py-3 text-sm bg-white outline-none focus:ring-2 focus:ring-[#dcc6fe] focus:border-[#9653fb] hover:border-[#9653fb] transition "
               />
               {errors.city && (
                 <p className="text-red-500 text-xs mt-1">{errors.city}</p>
@@ -750,7 +750,7 @@ export default function CreateCompany() {
                 onChange={handleChange}
                 placeholder="Postal code"
                 maxLength={6}
-                className=" w-full border border-slate-300 rounded-lg px-4 py-3 text-sm bg-white outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 hover:border-slate-400 transition "
+                className=" w-full border border-slate-300 rounded-lg px-4 py-3 text-sm bg-white outline-none focus:ring-2 focus:ring-[#dcc6fe] focus:border-[#9653fb] hover:border-[#9653fb] transition "
               />
               {errors.pincode && (
                 <p className="text-red-500 text-xs mt-1">{errors.pincode}</p>
@@ -766,7 +766,7 @@ export default function CreateCompany() {
                 name="country"
                 value={company.country}
                 onChange={handleChange}
-                className=" w-full border border-slate-300 rounded-lg px-4 py-3 text-sm bg-white outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 hover:border-slate-400 transition "
+                className=" w-full border border-slate-300 rounded-lg px-4 py-3 text-sm bg-white outline-none focus:ring-2 focus:ring-[#dcc6fe] focus:border-[#9653fb] hover:border-[#9653fb] transition "
               >
                 <option value="">Select Country</option>
                 {COUNTRY_LIST.map((country) => (
@@ -796,7 +796,7 @@ export default function CreateCompany() {
               disabled={isCreateLoading}
               className={`${
                 isCreateLoading ? "cursor-not-allowed opacity-50" : ""
-              } px-8 py-3 rounded-lg bg-[#6C72F3] text-white hover:bg-[#656cf3] shadow-sm hover:shadow-md transition`}
+              } px-8 py-3 rounded-lg bg-[#8A3FFA] text-white hover:bg-[#7c28f9] shadow-sm hover:shadow-md transition`}
             >
               {isCreateLoading ? <SmallSpinner /> : "Create Company"}
             </button>

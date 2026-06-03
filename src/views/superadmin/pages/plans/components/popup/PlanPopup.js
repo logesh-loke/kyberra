@@ -140,23 +140,23 @@ export default function PlanPopupModal({ onClose, selectedPlan, refetchPlanData 
         <div className="sticky top-0 z-10 bg-white border-b border-gray-200 px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <div className="p-2 bg-blue-50 rounded-lg">
-                <Sparkles className="w-5 h-5 text-[#676CE7]" />
+              <div className="p-2 bg-[#F8FAFC] rounded-lg">
+                <Sparkles className="w-5 h-5 text-[#A855F7]" />
               </div>
               <div>
                 <h2 className="text-lg font-semibold text-gray-900">
                   Edit Membership Plan
                 </h2>
-                <p className="text-gray-500 text-sm">
+                <p className="text-[#F8FAFC]0 text-sm">
                   Configure your subscription plan details
                 </p>
               </div>
             </div>
             <button
               onClick={onClose}
-              className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
+              className="p-2 hover:bg-[#F8FAFC] rounded-lg transition-colors"
             >
-              <X className="w-5 h-5 text-gray-500" />
+              <X className="w-5 h-5 text-[#F8FAFC]0" />
             </button>
           </div>
         </div>
@@ -172,7 +172,7 @@ export default function PlanPopupModal({ onClose, selectedPlan, refetchPlanData 
               type="text"
               value={form.planName}
               readOnly // 🔒 not editable
-              className={`w-full px-3 py-2.5 rounded-lg border outline-none transition-colors placeholder-gray-400 bg-gray-100 cursor-not-allowed ${
+              className={`w-full px-3 py-2.5 rounded-lg border outline-none transition-colors placeholder-gray-400 bg-[#F8FAFC] cursor-not-allowed ${
                 errors.planName
                   ? "border-red-300 focus:border-red-500 focus:ring-2 focus:ring-red-100"
                   : "border-gray-300"
@@ -188,13 +188,13 @@ export default function PlanPopupModal({ onClose, selectedPlan, refetchPlanData 
             {/* Duration */}
             <div>
               <label className="text-sm font-medium text-gray-700 mb-2 flex items-center gap-2">
-                <Calendar className="w-4 h-4 text-gray-500" />
+                <Calendar className="w-4 h-4 text-[#F8FAFC]0" />
                 Duration
               </label>
               <select
                 value={form.duration}
                 onChange={(e) => handleChange("duration", e.target.value)}
-                className="w-full px-3 py-2.5 rounded-lg border border-gray-300 outline-none bg-white transition-colors focus:border-blue-500 focus:ring-2 focus:ring-blue-100 appearance-none cursor-pointer"
+                className="w-full px-3 py-2.5 rounded-lg border border-gray-300 outline-none bg-white transition-colors focus:border-[#9551fa] focus:ring-2 focus:ring-[#F8FAFC] appearance-none cursor-pointer"
               >
                 {durationOptions.map((opt) => (
                   <option key={opt.value} value={opt.value}>
@@ -207,7 +207,7 @@ export default function PlanPopupModal({ onClose, selectedPlan, refetchPlanData 
             {/* User Limit */}
             <div>
               <label className="text-sm font-medium text-gray-700 mb-2 flex items-center gap-2">
-                <Users className="w-4 h-4 text-gray-500" />
+                <Users className="w-4 h-4 text-[#F8FAFC]0" />
                 User Limit *
               </label>
               <input
@@ -219,7 +219,7 @@ export default function PlanPopupModal({ onClose, selectedPlan, refetchPlanData 
                 className={`w-full px-3 py-2.5 rounded-lg border outline-none transition-colors placeholder-gray-400 ${
                   errors.userLimit
                     ? "border-red-300 focus:border-red-500 focus:ring-2 focus:ring-red-100"
-                    : "border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
+                    : "border-gray-300 focus:border-[#9551fa] focus:ring-2 focus:ring-[#F8FAFC]"
                 }`}
               />
               {errors.userLimit && (
@@ -231,11 +231,11 @@ export default function PlanPopupModal({ onClose, selectedPlan, refetchPlanData 
           {/* Price */}
           <div>
             <label className=" text-sm font-medium text-gray-700 mb-2 flex items-center gap-2">
-              <IndianRupee className="w-4 h-4 text-gray-500" />
+              <IndianRupee className="w-4 h-4 text-[#F8FAFC]0" />
               Price *
             </label>
             <div className="relative">
-              <div className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 font-medium">
+              <div className="absolute left-3 top-1/2 -translate-y-1/2 text-[#F8FAFC]0 font-medium">
                 ₹
               </div>
               <input
@@ -248,7 +248,7 @@ export default function PlanPopupModal({ onClose, selectedPlan, refetchPlanData 
                 className={`w-full pl-9 pr-3 py-2.5 rounded-lg border outline-none transition-colors placeholder-gray-400 ${
                   errors.price
                     ? "border-red-300 focus:border-red-500 focus:ring-2 focus:ring-red-100"
-                    : "border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
+                    : "border-gray-300 focus:border-[#9551fa] focus:ring-2 focus:ring-[#F8FAFC]"
                 }`}
               />
             </div>
@@ -262,13 +262,13 @@ export default function PlanPopupModal({ onClose, selectedPlan, refetchPlanData 
             <button
               type="button"
               onClick={onClose}
-              className="flex-1 px-4 py-2.5 rounded-lg border border-gray-300 bg-gray-50 font-medium text-gray-700 hover:bg-gray-50 transition-colors"
+              className="flex-1 px-4 py-2.5 rounded-lg border border-gray-300 bg-[#F8FAFC] font-medium text-gray-700 hover:bg-[#F8FAFC] transition-colors"
             >
               Cancel
             </button>
             <button
               type="submit"
-              className="flex-1 px-4 py-2.5 rounded-lg bg-[#676CE7] font-medium text-white hover:bg-[#676CE7] transition-colors focus:ring-2 focus:ring-[#676CE7] focus:outline-none"
+              className="flex-1 px-4 py-2.5 rounded-lg bg-[#AF7BFD] font-medium text-white hover:bg-[#944ffc] transition-colors focus:ring-2 focus:ring-[#676CE7] focus:outline-none"
             >
               Save
             </button>

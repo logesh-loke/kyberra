@@ -25,28 +25,28 @@ const PremiumPlan = ({ onEdit, premiumPlan }) => {
       </p>
 
     <ul className="mt-4 flex items-center flex-wrap gap-2 text-sm text-gray-600">
-       <li className="bg-[#EEF2FF] text-[#6C72F3] px-3 py-1 rounded-full">
+       <li className="bg-[#A14FFC26] text-[#AF7BFD] px-3 py-1 rounded-full">
     Dashboard Access & activity reports
   </li>
-  <li className="bg-[#EEF2FF] text-[#6C72F3] px-3 py-1 rounded-full">
+  <li className="bg-[#A14FFC26] text-[#AF7BFD]  px-3 py-1 rounded-full">
     End-to-end encrypted email sending
   </li>
-  <li className="bg-[#EEF2FF] text-[#6C72F3] px-3 py-1 rounded-full">
+  <li className="bg-[#A14FFC26] text-[#AF7BFD]  px-3 py-1 rounded-full">
     File upload limit: 10 MB
   </li>
-  <li className="bg-[#EEF2FF] text-[#6C72F3] px-3 py-1 rounded-full">
+  <li className="bg-[#A14FFC26] text-[#AF7BFD]  px-3 py-1 rounded-full">
     Message size limit: 10,000 characters
   </li>
-  <li className="bg-[#EEF2FF] text-[#6C72F3] px-3 py-1 rounded-full">
+  <li className="bg-[#A14FFC26] text-[#AF7BFD]  px-3 py-1 rounded-full">
     Priority support response within 12 hours
   </li>
-  <li className="bg-[#EEF2FF] text-[#6C72F3] px-3 py-1 rounded-full">
+  <li className="bg-[#A14FFC26] text-[#AF7BFD]  px-3 py-1 rounded-full">
     Email history up to 30 year
   </li>
-  <li className="bg-[#EEF2FF] text-[#6C72F3] px-3 py-1 rounded-full">
+  <li className="bg-[#A14FFC26] text-[#AF7BFD]  px-3 py-1 rounded-full">
     Advanced analytics & engagement insights
   </li>
-  <li className="bg-[#EEF2FF] text-[#6C72F3] px-3 py-1 rounded-full">
+  <li className="bg-[#A14FFC26] text-[#AF7BFD]  px-3 py-1 rounded-full">
     Custom branding support
   </li>
 </ul>

@@ -111,17 +111,17 @@ const ControlPanel = () => {
                 group
                 flex items-start gap-4
                 bg-white
-                border border-gray-200
+                border border-[#bc91fd]
                 rounded-xl
                 px-4 py-4
                 text-left
                 shadow-sm
                 transition
                 hover:shadow-md
-                hover:border-indigo-400
-                hover:bg-indigo-50/60
+                hover:border-[#AF7BFD]
+                hover:bg-[#A14FFC26]
                 focus:outline-none
-                focus:ring-2 focus:ring-indigo-500
+                focus:ring-2 focus:ring-[#d1b4fe]
               "
             >
               <div
@@ -129,13 +129,13 @@ const ControlPanel = () => {
                   flex-shrink-0 mt-1
                   w-10 h-10
                   rounded-full
-                  border border-gray-200
+                  border border-gray-200 
                   flex items-center justify-center
-                  bg-gray-50
-                  group-hover:bg-indigo-100
+                  bg-[#dfdee1]
+                  group-hover:bg-[#f5efff]
                 "
               >
-                <Icon className="w-5 h-5 text-indigo-600" />
+                <Icon className="w-5 h-5 text-[#AF7BFD]" />
               </div>
 
               <div className="flex flex-col">

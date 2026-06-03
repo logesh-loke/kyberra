@@ -84,14 +84,9 @@ export default function Sidebar() {
         <button
           onClick={open}
           className={`w-44 ${collapsed ? "p-2" : "py-3"} 
-  bg-gradient-to-r 
-  from-[#260c41] 
-  via-[#3f146c] 
-  to-[#561993]
+  bg-[#AF7BFD]
   text-white rounded-2xl flex items-center justify-center gap-2
-  hover:from-[#0d0416]
-  hover:via-[#260c41]
-  hover:to-[#561993]
+  hover:bg-[#944ffc]
   hover:scale-105 active:scale-95
   transition-all duration-300`}
         >
@@ -129,7 +124,7 @@ export default function Sidebar() {
                   ${collapsed ? "justify-center" : ""}
                   ${
                     isActive
-                      ? "bg-[#d5b9ff] text-[#631fa9] font-medium"
+                      ? "bg-[#d5b9ff] text-[#8A3FFA] font-medium"
                       : "hover:bg-[#f1e8ff]"
                   }`
                 }
